@@ -19,11 +19,20 @@
                 <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
                 <span class="ml-2">darryls-sporting-goods</span>
             </a>
-            <button class="btn btn-primary mdi mdi-currency-usd mdi-36px" onclick="addFunds()"></button>
+            <button class="btn btn-primary mdi mdi-currency-usd mdi-36px" onclick="app.fundsController.addFunds()" id="addfunds">
+            <div id="funds">
+                <h2></h2>
+            </div>
+            <div onclick="viewCart()">
+                <button class="btn btn-primary mdi mdi-cart mdi-36px"></button>
+            </div>
         </nav>
     </header>
     <main>
-        <div id="app"></div>
+        <div class="container-fluid">
+            <div class="row" id="items">
+            </div>
+        </div>
     </main>
     <footer class="container-fluid bg-dark text-light">
         <div class="row text-center">
